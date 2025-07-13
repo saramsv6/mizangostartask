@@ -1,0 +1,67 @@
+
+@font-face
+{
+    font-family: "Vazir Light";
+    src: url(./fonts/vazir-font-v16.1.0/Vazir-Light.ttf) format("truetype") ,
+    url(./fonts/vazir-font-v16.1.0/Vazir-Light.woff2) format("woff2");
+}
+@font-face
+{
+    font-family: "Vazir Bold";
+    src: url(./fonts/vazir-font-v16.1.0/Vazir-Bold.ttf) format("truetype") ,
+    url(./fonts/vazir-font-v16.1.0/Vazir-Bold.woff2) format("woff2");
+}
+
+
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background-color: rgb(74, 76, 78);
+    align-items: center;
+    font-family: "Vazir light";
+   
+}
+form
+{
+    margin-top: 56px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    background-color: #fff;
+    border-radius: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    background-image: linear-gradient(to right bottom,#f8bbd0,#bbdefb,#d1c4e9,#f0f4c3);
+
+}
+h3
+{
+    
+    color: #df467b;
+}
+
+label
+{
+    margin-bottom: 10px;
+}
+input
+{
+    margin-bottom: 30px;
+    height: 24px;
+    border-radius: 10px;
+    border-color: #df467b;
+}
+button
+{
+    margin-bottom: 16px;
+    border-radius: 10px;
+    background-color: #fff;
+    border-color: #fff;
+   
+}
+
+
