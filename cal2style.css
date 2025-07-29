@@ -1,0 +1,270 @@
+*
+{
+    box-sizing: content-box;
+    margin: 0;
+}
+:root{
+    height: 100%;
+}
+body
+{
+    height: 100%;
+    font-family: "Poppins";
+    background-image: linear-gradient(to right,#121212,#373737);
+}
+.container
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 60px;
+    position: relative;
+}
+.tape
+{
+    width: 56px;
+    height: 100%;
+    background-color: #c11750;
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+}
+.wrapper {
+  position: relative;
+  /* width: fit-content;
+  height: fit-content; */
+}
+.backcal
+{
+    width: 300px;
+    height: 550px;
+    background-image: linear-gradient(to bottom, #e94a7f,#e95687);
+    box-shadow: inset 0 4px 4px 1px rgba(255,255,255,0.3),
+    0 4px 20px -4px rgba(0,0,0,0.3);
+    border-radius: 24px;
+    position: absolute;
+    right: 0;
+    top: -32px;
+    right: -32px;
+    
+    z-index: -1;
+}
+.calculadora
+{
+    box-shadow: inset -1px 7px 7px 1px rgba(255,255,255,0.1),
+    10px 20px 20px  rgba(0,0,0,0.4);
+    background-color: rgb(41, 41, 41);
+    min-width: 300px;
+    max-width: 380px;
+    height: 550px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(7,1fr);
+    padding-top:56px;
+    border-radius: 24px;
+    gap: 15px;
+    padding: 18px;
+    padding-top: 24px;
+}
+.button
+{
+    cursor: pointer;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    background-image: linear-gradient(to bottom,rgb(41, 41, 41),rgb(52, 52, 52));
+     box-shadow: inset 0 4px 4px -2px rgba(255,255,255,0.07),
+    0 9px 16px -4px rgba(0,0,0,0.3);
+    color: #ffffff;
+    font-family: Rajdhani;
+    font-size: 24px;
+    font-weight: 600;
+    transition: all 300ms ease ;
+    
+}
+.sum
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    padding-top:18px ;
+    padding-left:250px;
+    color: #817d7d;
+    font-size: 20px;
+}
+.result
+{
+    grid-column-start: 1;
+    grid-column-end: 5;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 18px;
+    padding-right: 18px;
+    font-size: 24px;
+}
+.equal1
+{
+    color: #817d7d;
+    font-size: 24px;
+}
+.num
+{
+    font-size: 24px;
+    color: #ffffff;
+}
+.ce ,.c
+{
+    color: #de2261;
+}
+.c
+{
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+.zero
+{
+     grid-column-start: 1;
+    grid-column-end: 3;
+}
+.op
+{
+    background-image: linear-gradient(to bottom,#de2261,#de2261);
+    box-shadow: inset 0 4px 4px 1px rgba(255,255,255,0.3),
+    0 9px 16px -4px rgba(0,0,0,0.3);
+    padding-top: 8px;
+}
+.equal2
+{
+    background-image: linear-gradient(to bottom, #e94a7f,#e95687);
+    box-shadow: inset 0 4px 4px 1px rgba(255,255,255,0.3),
+    0 9px 16px -4px rgba(0,0,0,0.3);
+}
+.captions
+{
+    padding: 20px;
+}
+.logo
+{
+    margin-bottom: 78px;
+}
+.logo1
+{
+    visibility: hidden;
+}
+.caltext
+{
+    font-size: 52px;
+    font-weight: 500;
+    color: #f5bccf;
+}
+.destext
+{
+    color: #aeadad;
+    font-weight: 200;
+    font-size: 24px;
+    margin-bottom: 300px;
+}
+.comment
+{
+    width: 200px;
+    height: 46px;
+    border-radius: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    background-color: rgb(38, 37, 37);
+    color: #f393b3;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.brase
+{
+    color: #de2261;
+}
+button:hover
+{
+   background-image: linear-gradient(rgb(42, 42, 42),rgb(45, 45, 45));
+    box-shadow: inset 0 4px 10px -2px  rgba(255,255,255,0.08);
+    transform: scale(0.98);
+}
+.op:hover
+{
+    background-image: linear-gradient(#b9124a,#c11750);
+    box-shadow: inset 0 3px 10px 1px rgba(255,255,255,0.25);
+    transform: scale(0.98);
+}
+.equal2:hover
+{
+    background-image: linear-gradient(to bottom, #df346d,#dc4376);
+    box-shadow: inset 0 3px 10px 1px rgba(255,255,255,0.25);
+    transform: scale(0.98);
+}
+@media (max-width: 1050px) {
+    .container
+    {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .tape
+    {
+        width: 18px;
+    }
+    .wrapper
+    {
+        margin-top: 24px;
+    }
+    .calculadora
+    {
+        min-width: 260px;
+        height: 500px;
+    }
+        
+    .button
+    {
+        border-radius: 20px;
+    }
+    .captions
+    {
+        display: none;
+    }
+    .logo1
+    {
+        visibility: visible;
+        width: 100%;
+        margin-bottom: 24px;
+        align-items: center;
+        position: fixed;
+        top: 5px;
+        left: 28px;
+       
+    }
+    .sum
+    {
+        font-size: 16px;
+        padding-left:  220px;
+    }
+    .result
+    {
+         font-size: 14px;
+         padding-left: 16px;
+         padding-right: 16px;
+    }
+    .equal1,.num
+    {
+        font-size: 20px;
+    }
+    .backcal
+    {
+       width: 280px;
+       height:500px;
+       top: -16px;
+       right: -16px;    
+    }
+
+    
+}
